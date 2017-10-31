@@ -25,5 +25,8 @@ public class UIControlDireccion : MonoBehaviour {
         {
             transform.rotation = new Quaternion(X, Y, Z, W);
         }
+
+        if (ControlCombustible.hayCombustible)
+            tanque.transform.Rotate(Vector3.up);
 	}
 }
